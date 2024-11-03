@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #181717;
+    text-align: center;
+    font-family: "Protest Strike", sans-serif;
+}
+form{
+    border-radius: 7px;
+    background-color:#e2e2e2 ;
+    display: inline-block;
+    padding: 40px;
+    
+}
+h1{
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.facebook :nth-child(1){
+    text-decoration: none; /* Tắt gạch chân khi hover */
+    color: #ffffff;
+    background-color: rgb(98, 122, 173);
+    display: inline-block;
+    width: 140px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 3px;
+   
+    margin-right: 10px;
+   
+}
+.facebook :nth-child(2){
+    text-decoration: none; /* Tắt gạch chân khi hover */
+    color: #ffffff;
+    background-color: rgb(231, 111, 92);
+    display: inline-block;
+    width: 140px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 3px;
+    
+}
+.facebook a:hover{
+    background-color: rgb(231, 211, 211);
+}
+.user_pass{
+    text-align: start;
+    font-size: 20px;
+    margin: 30px;
+}
+.user_pass input{
+    height: 45px;
+    width: 600px;
+    padding-left:10px;
+    border: 1px solid rgb(168, 168, 240);
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+#dangnhap{
+    font-size: 30px;
+    text-decoration: none; 
+    color: rgb(110, 96, 96);
+}
+.item{    
+    background-color: rgb(28, 28, 28);
+    height: 45px;  
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid black;
+    width: 230px;
+    display: inline-block;
+}
+.item:hover{
+    background-color: rgb(255, 255, 255);
+}
+.quenmatkhau_dangki a{
+    text-decoration: none; 
+}
+.quenmatkhau_dangki :nth-child(1){
+    color: rgb(212, 25, 25);
+   
+}
+.quenmatkhau_dangki :nth-child(3){
+    color: rgb(0, 0, 0);
+}
+.quenmatkhau_dangki {
+    text-decoration: none; 
+    margin-top: 50px;
+}
+.content{
+   
+    color: black;
+    font-size: 15px;
+    padding: 15px;   
+    
+}
+.content a{
+    display: flex;
+    justify-content: center;
+   
+}
+.content p:nth-child(1){
+   margin-left: 25px;
+   text-align: start;
+  color: #f5f4f4;
+}
+.content p:nth-child(2){
+    margin-left: 25px;
+    text-align: start;
+    color: #f5f4f4;
+}
+.content p:nth-child(3){
+   text-align: center;
+}
+img{
+    height: 120px;
+    border-radius: 20px;
+   
+}
+
+
+
+
+
