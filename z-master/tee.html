@@ -4,21 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="jacket.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tee.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="nav-conrainer">
+  <div id="xacnhanthanhtoan" style="display:none;">
+    <div id="thanhtoan"> 
+        <div class="nhaninput">
+            <label for="">Họ Và Tên</label>
+            <input type="text" name="" id=""placeholder="Nhập Tên của bạn">
+            <label for="">Số điện thoại</label>
+            <input type="text" name="" id=""placeholder="Số điện thoại của bạn ">
+            <label for="">Tỉnh</label>
+            <input type="text" name="" id=""placeholder="Địa chỉ của bạn ">
+            <label for="">Quận Huyện</label>
+            <input type="text" name="" id=""placeholder="Địa chỉ của bạn ">
+            <label for="">Thôn Phường xã</label>
+            <input type="text" name="" id=""placeholder="Địa chỉ của bạn ">
+           
+        </div>
+        <div class="gio_hang">       
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ảnh Sản Phẩm</th>
+                            <th>Tên Sản Phẩm</th>
+                            <th>Giá Sản Phẩm</th>
+                            <th>Số Lượng</th>
+                          
+                        </tr>
+                    </thead>
+                    <tbody id="sanpham">
+                        <tr>
+                           
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <h2 id="bill1"></h2>
+            <button onclick="toggleContent()">Thanh Toán</button>
+        </div>
+        
+    </div>
+</div>
+     <div class="nav-conrainer">
+       
         <nav>
             <ul>
                 <ul class="sreach">
                     <li>
                         <img src="icon/sreach.png" alt="icon">
-                        <input type="text">
+                        <input type="text" id="sreach">
                     </li>
                 </ul>
+                <div class="tieude">
+                    <li class="item1"><a href="index.html">Home</a></li>
+                    <li class="item"><a href="#">Sale</a></li>
+                    <li class="item"><a href="#"> New Arrival</a>
+                        <div class="sub-service">
+                            <div class="dropdown-content">
+                                <a href="jacket.html">All </a>
+                                <a href="tee.html">T-Shirt</a>
+                                <br>
+                                <a href="">Pant</a>
+                                <br>
+                                <a href="">Bags</a>
+                            </div>
+                        </div>
+    
+                    </li>
+                    <li class="item"><a href="#">Contact</a></li>
+                </div>                
                 <div class="logo">
                     <a href="index.html">
                         <img src="https://i.pinimg.com/originals/c2/78/10/c27810228f6ad80545aa2d9407a13fa7.jpg"
@@ -26,75 +84,135 @@
                     </a>
                 </div>
                 <div class="menu">
-                    <a href="login.html"> <img src="icon/user (1).png" alt="" class="dropbtn"></a>
-                    <a href="shoping.html"> <img src="icon/shopping-bag.png" alt="" class="dropbtn"></a>
-                </div>                           
-                <li class="item1"><a href="#">Home</a></li>
-                <li class="item"><a href="#">About</a></li>
-                <li class="item"><a href="#"> New Arrival</a>
-                    <div class="sub-service">
-                        <div class="dropdown-content">
-                            <a href="jacket.html">Jacket</a>
-                            <a href="">T-Shirt</a>
-                            <br>
-                            <a href="">Pant</a>
-                            <br>
-                            <a href="">Bags</a>
-                        </div>
-                    </div>
-
-                </li>
-                <li class="item"><a href="#">Production</a></li>
-          </ul>
+                    <a href="login.html"> 
+                        <img src="icon/user (1).png" alt="" class="dropbtn">
+                    </a>                
+                    <button onclick="toggleContent1()" id="buttonbill">
+                        <img src="icon/shopping-bag.png" alt="" class="dropbtn_1" > 
+                        
+                    </button>
+                    
+                    <!-- Đây là phần giỏ hàng, nó sẽ hiển thị khi hover vào .dropbtn -->
+             
+            </ul>
 
         </nav>
-
+        <div id="content" style="display: none;">
+            <div class="cart-container">
+                <h2>Giỏ hàng của bạn</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ảnh sản phẩm</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Giá</th>
+                            <th>SLL</th>
+                            <th>Chọn</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                    
+                </table>
+                <h3 id="bill"></h3>
+                <button onclick="toggleContentnew()">thanh toán</button> 
+            </div>
+        </div>
     </div>
-    <form action="">
-        <div class="product-card">
-            <img src="images/sanpham1.jpg "alt="Hình ảnh sản phẩm" class="product-card__image">
-            <div class="product-card__info">
-                <h2 class="product-card__name">Tên Sản Phẩm</h2>
-                <p class="product-card__price">500,000 VND</p>
+    <form action="" style="padding-top: 200px;"> 
+        <div class = "card-wrapper">
+            <div class = "card">
+              <!-- card left -->
+              <div class="product-imgs">
+                <div class="img-display">
+                  <div class="img-showcase">
+                    <!-- Hình ảnh chính -->
+                    <img src="images/sanpham1.jpg" alt="Main Image" id="image1">
+                  </div>
+                </div>
+                <div class="img-select">
+                  <!-- Hình ảnh nhỏ (click để đổi chỗ) -->
+                  <div class="img-item">
+                    <a href="#" data-id="1">
+                      <img src="images/chitietsanpham1.jpg" alt="Image 2" id="image2" onclick="swapImages('image2')">
+                    </a>
+                  </div>
+                  <div class="img-item">
+                    <a href="#" data-id="2">
+                      <img src="images/chitietsanpham2.jpg" alt="Image 3" id="image3" onclick="swapImages('image3')">
+                    </a>
+                  </div>
+                  <div class="img-item">
+                    <a href="#" data-id="3">
+                      <img src="images/chitietsanpham3.jpg" alt="Image 4  " id="image4" onclick="swapImages('image3')">
+                    </a>
+                  </div>
+                  <div class="img-item">
+                    <a href="#" data-id="4">
+                      <img src="images/chitietsanpham4.jpg" alt="Image 5" id="image5"onclick="swapImages('image4')">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- card right -->
+              <div class = "product-content">
+                <h1 class = "product-title">Tee baby</h1>
+                
+                
+                <div class = "product-price">
+                
+                  <p class = "new-price"> Price: <span>500,000 </span></p>
+                </div>
+          
+                <div class = "product-detail">
+                  <h2>about this item: </h2>
+                  <p> Mẫu hoodie với cảm hứng từ con số 2 trong số 22 của ClownZ, với chi tiết số 2 được xuất hiện ấn tượng, 
+                    được thêu đáp bằng vải pheo trên phần thân trước. 
+                    </p>
+                  <p>Đi kèm là các chi tiết hình in ở mặt trước và sau của áo, phối cùng màu với màu của số. Số 2 là một con số</p>
+                  <ul>
+                    <li>Color: <span>grey</span></li>
+                    <li>Available: <span>in stock</span></li>
+                    <li>Category: <span>Hoodie</span></li>
+                    <li>Shipping Area: <span>All over the world</span></li>
+                    <li>Shipping Fee: <span>Free</span></li>
+                  </ul>
+                </div>
+          
+                <div class = "purchase-info">
+                  <input type = "number" min = "0" value = "1">
+                  <button type = "button" class = "btn1">
+                    Add to Cart <i class = "fas fa-shopping-cart"></i>
+                  </button>
+                  <button type = "button" class = "btn2">Compare</button>
+                </div>
+          
+               
+              </div>
             </div>
-            <div class="product-card__actions">
-                <button class="btn btn-buy">Mua Ngay</button>
-                <button class="btn btn-add">Thêm Vào Giỏ</button>
-            </div>
-        </div>
-        <div class="product-card">
-            <img src="images/sanpham7.jpg"alt="Hình ảnh sản phẩm" class="product-card__image">
-            <div class="product-card__info">
-                <h2 class="product-card__name">Tên Sản Phẩm</h2>
-                <p class="product-card__price">500,000 VND</p>
-            </div>
-            <div class="product-card__actions">
-                <button class="btn btn-buy">Mua Ngay</button>
-                <button class="btn btn-add">Thêm Vào Giỏ</button>
-            </div>
-        </div>
-        <div class="product-card">
-            <img src="images/tshirt.jpg "alt="Hình ảnh sản phẩm" class="product-card__image">
-            <div class="product-card__info">
-                <h2 class="product-card__name">Tên Sản Phẩm</h2>
-                <p class="product-card__price">500,000 VND</p>
-            </div>
-            <div class="product-card__actions">
-                <button class="btn btn-buy">Mua Ngay</button>
-                <button class="btn btn-add">Thêm Vào Giỏ</button>
-            </div>
-        </div>
-      
+          </div>
+        
     </form>
     <footer>
-        <div class="footer-content">
-            <h3>Công ty Rain</h3>
-            <p>Địa chỉ: Số 123 Thành Phố Yên bái</p>
-            <p>Email: tuanct413.com | Điện thoại: 0123 456 789</p>
+        <div >
+            <h3>MAY WE HELP YOU?</h3>
+            <p>Contact Us</p>
+            <p>My Order</p>
+            <p>&copy; FAQs</p>
+            <p>Email Unsubscribe</p>
+            <p>Sitemap</p>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Công ty ABC. Tất cả các quyền được bảo lưu.</p>
+        <div >
+            <h3>MAY WE HELP YOU?</h3>
+            <p>Contact Us</p>
+            <p>My Order</p>
+            <p>&copy; FAQs</p>
+            <p>Email Unsubscribe</p>
+            <p>Sitemap</p>
         </div>
     </footer>
+    <script src="viewproduct.js"></script>
 </body>
 </html>

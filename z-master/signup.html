@@ -12,45 +12,50 @@
 <body>
     <div class="content">
         <p>Địa chỉ: Việt Nam</p>
-        <p>Số điện Thoại : 0356665472</p>
-        <a href="index.html"> <img src="https://i.pinimg.com/originals/c2/78/10/c27810228f6ad80545aa2d9407a13fa7.jpg"
-                alt="logo"></a>
-
-
+        <p>Số điện thoại : 0356665472</p>
+        <a href="index.html"> 
+            <img src="https://i.pinimg.com/originals/c2/78/10/c27810228f6ad80545aa2d9407a13fa7.jpg" alt="logo">
+        </a>
     </div>
+
     <form action="">
-        <h1> Đăng ký tài khoản</h1>
-        <h3>Nếu chưa có tài khoản vui lòng đăng ký tại đây</h3>
+        <h1>Register an account</h1>
+        <h3>If you don't have an account, please register here</h3>
+        
         <div class="facebook">
-            <a href="">facebook</a>
-            <a href="">google</a>
+            <a href="#">Facebook</a>
+            <a href="#">Google</a>
         </div>
+        
         <div class="user_pass">
-            Họ <br>
-            <input type="text" placeholder="Nhập email hoặc số điện thoại ">
+            <label for="lastname">First name :</label>
             <br>
-            Tên <br>
-            <input type="text" placeholder="Nhập mật khẩu">
+            <input type="text" placeholder="Nhập họ" id="lastname">
             <br>
-            Số điện thoại <br>
-            <input type="text" placeholder="Nhập mật khẩu">
+            <label for="firstname">Last Name:</label>
             <br>
-            email <br>
-            <input type="text" placeholder="Nhập email hoặc số điện thoại ">
+            <input type="text" placeholder="Nhập tên" id="firstname">
             <br>
-            mật khẩu <br>
-            <input type="password" placeholder="Nhập mật khẩu">
+            <label for="phonenumber">Phone Number</label>
+            <br>
+            <input type="text" placeholder="Nhập số điện thoại" id="phonenumber">
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="text" placeholder="Nhập email" id="email">
+            <br>
+            <label for="pass">Password:</label>
+            <br>
+            <input type="password" placeholder="Nhập mật khẩu" id="pass">
         </div>
-        <p class="item"><a href="" id="dangnhap">Tạo Tài Khoản </a></p>
+
+        <button type="button" id="submitBtn">Create an account</button>
+        
         <div class="quenmatkhau_dangki">
-            <a href="login.html">Đăng Nhập</a>
-            <br>
-           
-
+            <a href="login.html">Login</a>
         </div>
-
     </form>
 
+    <script src="signup.js"></script>
 </body>
-
 </html>

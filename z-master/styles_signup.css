@@ -118,6 +118,21 @@ img{
    
     padding: 20px;
 }
+#submitBtn{
+    font-size: 30px;
+    border: none;
+    background-color: rgb(174, 247, 222);
+    height: 70px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Protest Strike", sans-serif;
+}
+#submitBtn:hover{
+    
+    background-color: rgb(255, 255, 255);
+    
+}
 
 
 

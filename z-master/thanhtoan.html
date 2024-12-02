@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="thanhtoan.css">
+</head>
+<body>
+    
+    
+    <div id="xacnhanthanhtoan">
+        <div id="thanhtoan"> 
+            <div class="nhaninput">
+                <label for="">Full Name</label>
+                <input type="text" placeholder="Enter your name" id="name">
+                <label for="">Phone Number</label>
+                <input type="text" placeholder="Enter your phone number" id="tinh">
+                <label for="">Province</label>
+                <input type="text" placeholder="Enter your address" id="huyen">
+                <label for="">District</label>
+                <input type="text" placeholder="Enter your address" id="thon">
+                <label for="">Ward</label>
+                <input type="text" placeholder="Enter your address" id="phuong">
+            </div>
+            <div class="gio_hang">       
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product Image</th>
+                                <th>Product Name</th>
+                                <th>Product Price</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody id="sanpham">
+                            <!-- Data will be added here via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                <h2 id="bill1">Total: 0 VND</h2>
+                <button onclick="thanhtoan()">Checkout</button>
+            </div>
+        </div>
+        <a href="index.html">X</a>
+    </div>
+    
+    <script src="thanhtoan.js"></script>
+</body>
+</html>

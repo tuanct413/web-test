@@ -1,0 +1,128 @@
+/* Đặt font chữ và reset margin, padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Bố cục chính của phần xác nhận thanh toán */
+#xacnhanthanhtoan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+/* Container chính */
+#thanhtoan {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Form nhập thông tin */
+.nhaninput {
+    flex: 1;
+    min-width: 300px;
+}
+
+.nhaninput label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.nhaninput input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.nhaninput input:focus {
+    border-color: #c1d6ed;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Phần giỏ hàng */
+.gio_hang {
+    flex: 2;
+    min-width: 400px;
+}
+
+.gio_hang table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.gio_hang table thead tr {
+    background: #999fa5;
+    color: #fff;
+    text-align: left;
+}
+
+.gio_hang table th,
+.gio_hang table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.gio_hang table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+#bill1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Nút thanh toán */
+button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+a{
+    text-decoration: none; /* Tắt gạch chân */
+    position: absolute;
+    top: 280px;
+    right: 336px;
+    font-size: 30px;
+}
+
