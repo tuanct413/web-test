@@ -1,23 +1,10 @@
-window.addEventListener("load", function () {
-    const currentUserEmail = sessionStorage.getItem("currentUserEmail"); // Lấy email từ sessionStorage
-    if (currentUserEmail) {
-        alert(`Chào mừng ${currentUserEmail}!`);
-        // Không cần tải giỏ hàng từ sessionStorage nữa
-    } else {
-        alert("Bạn chưa đăng nhập!");
-        window.location.href = "login.html";
-    }
-});
+
 
 carttotal();
 
-
-
-function toggleContent1() {
+function toggleContent1(show) {
     var content = document.getElementById('content');
- 
-    // Kiểm tra xem phần tử hiện tại đang hiển thị hay không
-    if (content.style.display === 'none' || content.style.display === '') {
+    if (show) {
         content.style.display = 'block'; // Hiển thị phần tử
     } else {
         content.style.display = 'none'; // Ẩn phần tử
@@ -68,7 +55,7 @@ function addcart(productName, productImage, productPrice, productQuantity) {
 
     // Kiểm tra sản phẩm đã có trong giỏ hàng chưa
     var existingRows = cartTable.querySelectorAll("tr");
- 
+
 
     // Tạo dòng mới cho sản phẩm (dành cho bảng giỏ hàng chính)
     var addtr = document.createElement("tr");
@@ -89,7 +76,7 @@ function addcart(productName, productImage, productPrice, productQuantity) {
             carttotal();
         }
     });
-
+    
     carttotal(); // Cập nhật lại tổng giỏ hàng
     
 }
@@ -158,4 +145,24 @@ function carttotal() {
 function viewproducts(){
     window.open('tee.html', '_blank');
 }
+// function searchProducts() {
+//     // Lấy giá trị người dùng nhập vào thanh tìm kiếm
+//     const searchValue = document.getElementById('search').value.toLowerCase();
+    
+//     // Lấy tất cả các thẻ chứa sản phẩm
+//     const productCards = document.querySelectorAll('.product-card');
+
+//     // Lặp qua từng sản phẩm để kiểm tra
+//     productCards.forEach(card => {
+//         const productName = card.querySelector('.product-card__name').textContent.toLowerCase();
+
+//         // Nếu tên sản phẩm chứa từ khóa tìm kiếm, hiển thị, ngược lại ẩn
+//         if (productName.includes(searchValue)) {
+//             card.style.display = "block";
+//         } else {
+//             card.style.display = "none";
+//         }
+//     });
+// }
+
 

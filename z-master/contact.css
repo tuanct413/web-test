@@ -100,3 +100,13 @@ input[type=checkbox]:checked + label {
   color: #f00;
   font-style: normal;
 }
+button{
+    border: none;
+    background-color: #444442;
+    
+}
+button a{
+    font-size: 35px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
